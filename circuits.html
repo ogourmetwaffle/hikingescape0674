@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circuits – Hiking Escape</title>
+  <meta name="description" content="Découvrez tous nos circuits de randonnée en Alpes Côte d'Azur. Facile, modéré ou difficile, trouvez l'aventure qui vous correspond." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="https://static.wixstatic.com/media/495101_555911557bc64e0281a29d8715cefc50~mv2.jpeg" alt="Logo Hiking Escape" />
+      Hiking Escape
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link">Accueil</a></li>
+      <li><a href="a-propos.html"   class="nav-link">À propos</a></li>
+      <li><a href="circuits.html"   class="nav-link active">Circuits</a></li>
+      <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+      <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      <li><a href="contact.html"    class="btn btn-primary nav-cta">Réserver</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html"      class="nav-link">Accueil</a>
+    <a href="a-propos.html"   class="nav-link">À propos</a>
+    <a href="circuits.html"   class="nav-link active">Circuits</a>
+    <a href="actualites.html" class="nav-link">Actualités</a>
+    <a href="contact.html"    class="nav-link">Contact</a>
+    <a href="contact.html"    class="btn btn-primary" style="margin-top:.5rem;text-align:center;">Réserver</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image:url('https://static.wixstatic.com/media/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg/v1/fill/w_1920,h_800,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Réservez votre évasion</h1>
+      <p>Des circuits pour tous les niveaux, au cœur des Alpes Côte d'Azur</p>
+    </div>
+  </div>
+
+  <!-- CIRCUITS -->
+  <section style="background:var(--bg-white);padding:5rem 1.5rem;">
+    <div class="container">
+      <h2 class="section-title">Nos Randonnées</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Découvrez nos circuits de randonnées uniques, spécialement conçus pour tous les niveaux. Préparez-vous à explorer des paysages époustouflants.</p>
+
+      <!-- Filtres -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tous les circuits</button>
+        <button class="filter-btn" data-filter="easy">Facile</button>
+        <button class="filter-btn" data-filter="medium">Modéré</button>
+        <button class="filter-btn" data-filter="hard">Difficile</button>
+        <button class="filter-btn" data-filter="sport">Sport nautique</button>
+      </div>
+
+      <div class="circuits-grid" id="circuitsGrid">
+
+        <!-- Facile -->
+        <div class="circuit-card" data-level="easy">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_ff0c88d73dc54291b60e18ffcb67f79b~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_ff0c88d73dc54291b60e18ffcb67f79b~mv2.jpeg" alt="Cascade de Redebraus" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-easy">Facile</span>
+            <h3>Cascade de Redebraus</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Débutant</span>
+            </div>
+            <div class="circuit-price">11 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="easy">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_1842c0e445854e5ba2606705a8e02d6e~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_1842c0e445854e5ba2606705a8e02d6e~mv2.jpeg" alt="Revest-les-Roches" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-easy">Facile</span>
+            <h3>Revest-les-Roches</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 h 30 min</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Débutant</span>
+            </div>
+            <div class="circuit-price">15 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="easy">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_a82143ccb5914ab0a4dc8ce318763c56~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_a82143ccb5914ab0a4dc8ce318763c56~mv2.jpeg" alt="Gorges du Blavet" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-easy">Facile</span>
+            <h3>Gorges du Blavet</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Débutant</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <!-- Modéré -->
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg" alt="Plateau de Caussol" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Plateau de Caussol</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 5 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_b5fc153f8f2941dbbeb0f69c7eca9a80~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_b5fc153f8f2941dbbeb0f69c7eca9a80~mv2.jpeg" alt="Cascade du Riou" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Cascade du Riou</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 5 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">20 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_9005eb851e4541269b65a4763ca5a301~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_9005eb851e4541269b65a4763ca5a301~mv2.jpeg" alt="Croix de la Gravette" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Croix de la Gravette – Villard-sur-Var</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 5 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">20 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_ff754fd4b85444189dd12cf9bd491d24~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_ff754fd4b85444189dd12cf9bd491d24~mv2.jpeg" alt="Lac du Sénateur" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Lac du Sénateur</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_718b249285544528bc5cbe9cb2859063~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_718b249285544528bc5cbe9cb2859063~mv2.jpeg" alt="Lac Nègre" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Lac Nègre & Lac des Graveirettes</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_4a5d8942877a445ba10dcc5941c369d6~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_4a5d8942877a445ba10dcc5941c369d6~mv2.jpeg" alt="Refuge des Merveilles" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Refuge des Merveilles</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_faa8c1796da04c11bfe0cd635b4c6513~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_faa8c1796da04c11bfe0cd635b4c6513~mv2.jpeg" alt="Lac Autier – Vallée de la Gordolasque" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Lac Autier – Vallée de la Gordolasque</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_18430833dac24ee6861f26d7d45ddc25~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_18430833dac24ee6861f26d7d45ddc25~mv2.jpeg" alt="Lac Vert – Fontanalba" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Lac Vert – Fontanalba</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_07cc9a22027146baa0a38ccf8485a29b~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_07cc9a22027146baa0a38ccf8485a29b~mv2.jpeg" alt="Vacherie Erps – Boréon" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Vacherie Erps – Boréon</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h 30 min</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">25 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="medium">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_8dd9d895f49041cd95475339e3cc2b85~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_8dd9d895f49041cd95475339e3cc2b85~mv2.jpeg" alt="Lac de Vens" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Lac de Vens</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <!-- Difficile -->
+        <div class="circuit-card" data-level="hard">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg" alt="Lac des terres rouges" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-hard">Difficile</span>
+            <h3>Lac des terres rouges – Baisse de Druos</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Avancé</span>
+            </div>
+            <div class="circuit-price">35 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="hard">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_79d90d78c05349f7a1b2b160dfa60620~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_79d90d78c05349f7a1b2b160dfa60620~mv2.jpeg" alt="Mont Pelat et son Lac d'Allos" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-hard">Difficile</span>
+            <h3>Mont Pelat et son Lac d'Allos</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h 30 min</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Avancé</span>
+            </div>
+            <div class="circuit-price">45 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card" data-level="hard">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_b53b88c63e5446cd9b458c9968ceeee7~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_b53b88c63e5446cd9b458c9968ceeee7~mv2.jpeg" alt="Cime du Ters & Cime Gonella" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-hard">Difficile</span>
+            <h3>Cime du Ters & Cime Gonella</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 8 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Avancé</span>
+            </div>
+            <div class="circuit-price">25 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <!-- Sport nautique -->
+        <div class="circuit-card" data-level="sport">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_75e0a3a94acb487ea0a7ad42a6059cee~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_75e0a3a94acb487ea0a7ad42a6059cee~mv2.jpeg" alt="Location de paddle" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-sport">Sport nautique</span>
+            <h3>Location de paddle</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 5 h</span>
+              <span><i class="fa-solid fa-water"></i> Côte d'Azur</span>
+            </div>
+            <div class="circuit-price">40 € <span>/ personne</span></div>
+            <a href="contact.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+      </div><!-- /circuits-grid -->
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Une question sur un circuit ?</h2>
+      <p>Contactez-nous, nous sommes là pour vous aider à choisir la randonnée parfaite.</p>
+      <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="https://static.wixstatic.com/media/495101_555911557bc64e0281a29d8715cefc50~mv2.jpeg" alt="Logo" />
+          Hiking Escape
+        </div>
+        <p>Randonnées organisées en région Alpes Côte d'Azur, pour tous les niveaux.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/hikingescape0674" target="_blank" rel="noopener" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="circuits.html">Circuits</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Circuits</h4>
+        <ul class="footer-links">
+          <li><a href="circuits.html">Randonnées faciles</a></li>
+          <li><a href="circuits.html">Randonnées modérées</a></li>
+          <li><a href="circuits.html">Randonnées difficiles</a></li>
+          <li><a href="circuits.html">Location de paddle</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <ul class="footer-links">
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="politique-cookies.html">Politique de cookies</a></li>
+          <li><a href="termes-conditions.html">Termes et conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Hiking Escape. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) navbar.classList.add('scrolled');
+    });
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+
+    // Filtres
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('#circuitsGrid .circuit-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.level === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Hiking Escape</title>
+  <meta name="description" content="Contactez Hiking Escape pour toute question sur nos randonnées en Alpes Côte d'Azur." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="https://static.wixstatic.com/media/495101_555911557bc64e0281a29d8715cefc50~mv2.jpeg" alt="Logo Hiking Escape" />
+      Hiking Escape
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link">Accueil</a></li>
+      <li><a href="a-propos.html"   class="nav-link">À propos</a></li>
+      <li><a href="circuits.html"   class="nav-link">Circuits</a></li>
+      <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+      <li><a href="contact.html"    class="nav-link active">Contact</a></li>
+      <li><a href="circuits.html"   class="btn btn-primary nav-cta">Réserver</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html"      class="nav-link">Accueil</a>
+    <a href="a-propos.html"   class="nav-link">À propos</a>
+    <a href="circuits.html"   class="nav-link">Circuits</a>
+    <a href="actualites.html" class="nav-link">Actualités</a>
+    <a href="contact.html"    class="nav-link active">Contact</a>
+    <a href="circuits.html"   class="btn btn-primary" style="margin-top:.5rem;text-align:center;">Réserver</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background-image:url('https://static.wixstatic.com/media/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg/v1/fill/w_1920,h_800,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Contactez-nous</h1>
+      <p>Pour toute question ou demande de réservation, nous sommes là pour vous.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact-section" style="padding:5rem 1.5rem;">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Infos -->
+        <div class="contact-info">
+          <h2>On vous répond rapidement !</h2>
+          <p>Pour toute question ou demande d'informations, n'hésitez pas à nous contacter. Nous nous engageons à répondre rapidement à vos préoccupations.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div class="contact-item-text">
+                <h4>Instagram</h4>
+                <a href="https://www.instagram.com/hikingescape0674" target="_blank" rel="noopener">@hikingescape0674</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-map-marker-alt"></i></div>
+              <div class="contact-item-text">
+                <h4>Zone d'activité</h4>
+                <p>Région Alpes Côte d'Azur (PACA)</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="contact-item-text">
+                <h4>Délai de réponse</h4>
+                <p>Sous 24 à 48 h</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem;padding:1.5rem;background:var(--bg-light);border-radius:var(--radius);">
+            <p style="font-size:.9rem;color:var(--text-mid);line-height:1.7;">
+              <strong style="color:var(--green-dark);">N'hésitez pas à me contacter</strong> pour toute demande de renseignements sur mes circuits, et je vous répondrai dans les meilleurs délais.
+            </p>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="contact-form">
+          <h3 style="color:var(--green-dark);margin-bottom:1.5rem;font-size:1.3rem;">Envoyez-nous un message</h3>
+          <!--
+            Pour activer ce formulaire sans backend, remplacez l'action par votre endpoint Formspree :
+            https://formspree.io/f/xqewyjwj
+            Créez un compte gratuit sur formspree.io
+          -->
+          <form action="https://formspree.io/f/xqewyjwj" method="POST" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="circuit">Circuit souhaité</label>
+              <select id="circuit" name="circuit">
+                <option value="">-- Sélectionnez un circuit --</option>
+                <option>Cascade de Redebraus (4h – 11€)</option>
+                <option>Revest-les-Roches (4h30 – 15€)</option>
+                <option>Gorges du Blavet (4h – 30€)</option>
+                <option>Cascade du Riou (5h – 20€)</option>
+                <option>Plateau de Caussol (5h – 30€)</option>
+                <option>Croix de la Gravette – Villard-sur-Var (5h – 20€)</option>
+                <option>Lac du Sénateur (4h – 30€)</option>
+                <option>Lac Nègre & Lac des Graveirettes (6h – 30€)</option>
+                <option>Refuge des Merveilles (6h – 30€)</option>
+                <option>Lac Autier – Vallée de la Gordolasque (6h – 30€)</option>
+                <option>Lac Vert – Fontanalba (6h – 30€)</option>
+                <option>Vacherie Erps – Boréon (6h30 – 25€)</option>
+                <option>Lac de Vens (6h – 30€)</option>
+                <option>Lac des terres rouges – Baisse de Druos (6h – 35€)</option>
+                <option>Mont Pelat et son Lac d'Allos (6h30 – 45€)</option>
+                <option>Cime du Ters & Cime Gonella (8h – 25€)</option>
+                <option>Location de paddle (5h – 40€)</option>
+                <option>Autre / Renseignement général</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Votre message, questions ou demandes de renseignements..."></textarea>
+            </div>
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+            <button type="submit" class="btn btn-primary form-submit">
+              <i class="fa-solid fa-paper-plane"></i>&nbsp; Envoyer le message
+            </button>
+          </form>
+          <p id="formSuccess" style="display:none;margin-top:1rem;color:var(--green-mid);font-weight:600;text-align:center;">
+            ✅ Message envoyé ! Nous vous répondrons dans les meilleurs délais.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="https://static.wixstatic.com/media/495101_555911557bc64e0281a29d8715cefc50~mv2.jpeg" alt="Logo" />
+          Hiking Escape
+        </div>
+        <p>Randonnées organisées en région Alpes Côte d'Azur, pour tous les niveaux.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/hikingescape0674" target="_blank" rel="noopener" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="circuits.html">Circuits</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Circuits</h4>
+        <ul class="footer-links">
+          <li><a href="circuits.html">Randonnées faciles</a></li>
+          <li><a href="circuits.html">Randonnées modérées</a></li>
+          <li><a href="circuits.html">Randonnées difficiles</a></li>
+          <li><a href="circuits.html">Location de paddle</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <ul class="footer-links">
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="politique-cookies.html">Politique de cookies</a></li>
+          <li><a href="termes-conditions.html">Termes et conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Hiking Escape. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+
+    // Gestion formulaire (Formspree AJAX)
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          document.getElementById('formSuccess').style.display = 'block';
+        }
+      } catch (err) {
+        // fallback: submit normalement
+        form.submit();
+      }
+    });
+  </script>
+
+</body>
+</html>

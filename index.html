@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hiking Escape – Randonnées Alpes Côte d'Azur</title>
+  <meta name="description" content="Hiking Escape organise des randonnées pour tous les niveaux en région Alpes Côte d'Azur. Découvrez des paysages à couper le souffle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="https://static.wixstatic.com/media/495101_555911557bc64e0281a29d8715cefc50~mv2.jpeg" alt="Logo Hiking Escape" />
+      Hiking Escape
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html"      class="nav-link active">Accueil</a></li>
+      <li><a href="a-propos.html"   class="nav-link">À propos</a></li>
+      <li><a href="circuits.html"   class="nav-link">Circuits</a></li>
+      <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+      <li><a href="contact.html"    class="nav-link">Contact</a></li>
+      <li><a href="circuits.html"   class="btn btn-primary nav-cta">Réserver</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html"      class="nav-link active">Accueil</a>
+    <a href="a-propos.html"   class="nav-link">À propos</a>
+    <a href="circuits.html"   class="nav-link">Circuits</a>
+    <a href="actualites.html" class="nav-link">Actualités</a>
+    <a href="contact.html"    class="nav-link">Contact</a>
+    <a href="circuits.html"   class="btn btn-primary" style="margin-top:.5rem;text-align:center;">Réserver</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" style="background-image:url('https://static.wixstatic.com/media/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg/v1/fill/w_1920,h_1080,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Alpes Côte d'Azur</p>
+      <h1>Bienvenue chez<br>Hiking Escape</h1>
+      <p>Partez à la conquête de paysages époustouflants. Randonnées organisées pour tous les niveaux, au cœur de la nature provençale.</p>
+      <div class="hero-buttons">
+        <a href="circuits.html" class="btn btn-primary">Découvrir nos circuits</a>
+        <a href="a-propos.html" class="btn btn-outline">Qui sommes-nous ?</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <i class="fa-solid fa-chevron-down"></i>
+      <span>Découvrir</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT STRIP ===================== -->
+  <div class="about-strip">
+    <div class="about-strip-inner">
+      <div>
+        <h2>Qui sommes-nous ?</h2>
+        <p>Nous sommes passionnés de nature et d'aventure, et nous proposons des organisations de randonnée pour tous les niveaux. Rejoignez-nous pour explorer les grands espaces et vivre des moments inoubliables en région Provence Alpes Côte d'Azur.</p>
+        <br/>
+        <a href="a-propos.html" class="btn btn-outline" style="border-color:var(--green-light);color:var(--green-light);">En savoir plus</a>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">17+</div>
+          <div class="stat-label">Circuits disponibles</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Nature & aventure</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Tous</div>
+          <div class="stat-label">Niveaux acceptés</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">PACA</div>
+          <div class="stat-label">Région Alpes Côte d'Azur</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== CIRCUITS aperçu ===================== -->
+  <section class="circuits-section">
+    <div class="container">
+      <h2 class="section-title">Réservez votre circuit</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Découvrez nos circuits en région Alpes Côte d'Azur, où chaque pas vous mène à des paysages à couper le souffle.</p>
+      <div class="circuits-grid">
+
+        <div class="circuit-card">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg" alt="Lac Nègre" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-medium">Modéré</span>
+            <h3>Lac Nègre & Lac des Graveirettes</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Intermédiaire</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="circuits.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg" alt="Plateau de Caussol" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-easy">Facile</span>
+            <h3>Plateau de Caussol</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 5 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Débutant</span>
+            </div>
+            <div class="circuit-price">30 € <span>/ personne</span></div>
+            <a href="circuits.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+        <div class="circuit-card">
+          <img class="circuit-card-img" src="https://static.wixstatic.com/media/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg" alt="Lac des terres rouges" loading="lazy" />
+          <div class="circuit-body">
+            <span class="circuit-badge badge-hard">Difficile</span>
+            <h3>Lac des terres rouges – Baisse de Druos</h3>
+            <div class="circuit-meta">
+              <span><i class="fa-regular fa-clock"></i> 6 h</span>
+              <span><i class="fa-solid fa-person-hiking"></i> Avancé</span>
+            </div>
+            <div class="circuit-price">35 € <span>/ personne</span></div>
+            <a href="circuits.html" class="btn btn-green">Réserver</a>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="circuits.html" class="btn btn-primary">Voir tous nos circuits</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TÉMOIGNAGES ===================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Avis de nos randonneurs</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Ils nous ont fait confiance et ont vécu des aventures inoubliables.</p>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">« J'ai vécu une expérience incroyable avec Hiking Escape. Les organisateurs étaient compétents et les paysages à couper le souffle. Je recommande vivement ! »</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div>
+              <div class="testimonial-name">Mathieu</div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">« Une organisation parfaite, des guides passionnés et des sentiers magnifiques. On reviendra sans hésiter pour découvrir d'autres circuits ! »</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <div class="testimonial-name">Sophie</div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">« Super journée en montagne ! L'ambiance du groupe était top et le guide connaissait chaque recoin du Mercantour. Merci Hiking Escape ! »</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">Alina</div>
+              <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACTUALITÉS ===================== -->
+  <section class="news-section">
+    <div class="container">
+      <h2 class="section-title">Dernières actualités</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Suivez nos aventures et nos dernières sorties.</p>
+      <div class="news-grid">
+
+        <div class="news-card">
+          <img src="https://static.wixstatic.com/media/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg" alt="Hiking Escape à Valberg" loading="lazy" />
+          <div class="news-body">
+            <p class="news-date">7 Avril 2026</p>
+            <h3>✨ Hiking Escape à Valberg</h3>
+            <p>Randonnée sur le Sentier Planétaire jusqu'aux Anguillers, avec un passage par le magnifique lac du Sénateur et une vue imprenable sur le Mont Mounier et le Mercantour.</p>
+            <a href="actualites.html" class="news-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <img src="https://static.wixstatic.com/media/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg" alt="Randonnée Vallée du Boréon" loading="lazy" />
+          <div class="news-body">
+            <p class="news-date">28 Mars 2026</p>
+            <h3>Randonnée Vallée du Boréon</h3>
+            <p>Super journée en montagne en raquettes et crampons, jusqu'au Col de Salèse (2000 m), avec une météo idéale dans le Mercantour.</p>
+            <a href="actualites.html" class="news-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <img src="https://static.wixstatic.com/media/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg/v1/fill/w_600,h_400,fp_0.50_0.50,q_85,enc_avif,quality_auto/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg" alt="Plateau de Calern" loading="lazy" />
+          <div class="news-body">
+            <p class="news-date">9 Février 2026</p>
+            <h3>Plateau de Calern</h3>
+            <p>Petite randonnée sur le plateau de Calern, entre sentiers enneigés, grands espaces sauvages et les observatoires. Panoramas ouverts sur la mer et les sommets.</p>
+            <a href="actualites.html" class="news-link">Lire la suite <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="actualites.html" class="btn btn-primary">Voir toutes les actualités</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INSTAGRAM ===================== -->
+  <section class="instagram-section">
+    <div class="container">
+      <div class="instagram-header">
+        <h2 class="section-title">Partagez vos aventures</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Rejoignez la communauté et partagez vos plus beaux moments avec <span class="handle">@hikingescape0674</span></p>
+      </div>
+      <div class="instagram-grid">
+        <a href="https://www.instagram.com/hikingescape0674" target="_blank" rel="noopener" class="insta-item">
+          <img src="https://static.wixstatic.com/media/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg/v1/fill/w_400,h_400,fp_0.50_0.50,q_80,enc_avif,quality_auto/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg" alt="Instagram" loading="lazy" />
+        </a>
+        <a href="https://www.instagram.com/hikingescape0674" target="_blank" rel="noopener" class="insta-item">
+          <img src="https://static.wixstatic.com/media/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg/v1/fill/w_400,h_400,fp_0.50_0.50,q_80,enc_avif,quality_auto/495101_8d3f61cd86a04f29be95e4344a2143c3~mv2.jpeg" alt="Instagram" loading="lazy" />
+        </a>
+        <a href="https://www.instagram.com/hikingescape0674" target="_blank" rel="noopener" class="insta-item">
+          <img src="https://static.wixstatic.com/media/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg/v1/fill/w_400,h_400,fp_0.50_0.50,q_80,enc_avif,quality_auto/495101_030021464d9749cb96fd32b245657bca~mv2.jpeg" alt="Instagram" loading="lazy" />
+        </a>
+        <a href="https://www.instagram.com/hikingescape0674" target="_blank" rel="noopener" class="insta-item">
+          <img src="https://static.wixstatic.com/media/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg/v1/fill/w_400,h_400,fp_0.50_0.50,q_80,enc_avif,quality_auto/495101_748d737d24454e569f3c154f74122f5d~mv2.jpeg" alt="Instagram" loading="lazy" />
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:1.8rem;">
+        <a href="https://www.instagram.com/hikingescape0674" target="_blank" rel="noopener" class="btn btn-green">
+          <i class="fa-brands fa-instagram"></i>&nbsp; Suivre sur Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Prêt pour votre prochaine aventure ?</h2>
+      <p>Découvrez nos 17+ circuits et réservez dès maintenant votre évasion en montagne.</p>
+      <a href="circuits.html" class="btn btn-primary">Voir les circuits</a>
+      &nbsp;&nbsp;
+      <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="https://static.wixstatic.com/media/495101_555911557bc64e0281a29d8715cefc50~mv2.jpeg" alt="Logo" />
+          Hiking Escape
+        </div>
+        <p>Randonnées organisées en région Alpes Côte d'Azur, pour tous les niveaux. Des paysages inoubliables vous attendent.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/hikingescape0674" target="_blank" rel="noopener" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="circuits.html">Circuits</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Circuits</h4>
+        <ul class="footer-links">
+          <li><a href="circuits.html">Randonnées faciles</a></li>
+          <li><a href="circuits.html">Randonnées modérées</a></li>
+          <li><a href="circuits.html">Randonnées difficiles</a></li>
+          <li><a href="circuits.html">Location de paddle</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <ul class="footer-links">
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="politique-cookies.html">Politique de cookies</a></li>
+          <li><a href="termes-conditions.html">Termes et conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Hiking Escape. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
