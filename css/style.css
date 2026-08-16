@@ -563,6 +563,10 @@ section { padding: 5rem 1.5rem; }
   font-size: .9rem;
   color: var(--text-mid);
   line-height: 1.7;
+}
+
+/* Leave the date paragraph natural size; allow content paragraphs to grow */
+.news-body p:not(.news-date) {
   flex: 1;
 }
 .news-link {
